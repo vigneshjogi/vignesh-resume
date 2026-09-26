@@ -33,6 +33,6 @@ Plain HTML, CSS and vanilla JavaScript: no framework, no build step.
 
 ## Deploy
 
-Pushing to `main` deploys to Vercel automatically.
+Pushing to `main` deploys to Vercel automatically (GitHub → Vercel, connected Sep 2026). Other branches get preview URLs.
 
 Built with [Claude Code](https://claude.com/claude-code).
