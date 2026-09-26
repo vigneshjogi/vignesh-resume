@@ -603,6 +603,7 @@
               <ul class="pts">
                 <li>Built a live audio "Clubs &amp; Spaces" product: hosting, speaker requests, host approval, moderation, mute-all, reactions, polls, and threaded chat with replies and edits.</li>
                 <li>Record each speaker separately with LiveKit Egress, then run AI transcription that detects each speaker's language and falls back gracefully when a step fails.</li>
+                <li>Built an audio-merging service that creates radio playlists automatically: it downloads tracks in parallel with retries, then merges them without manual editing.</li>
                 <li>Added passwordless OTP login, reminders and calendar invites, and automated daily and monthly listener reports by email.</li>
               </ul>
             </div>
@@ -620,7 +621,7 @@
               <h4><a href="https://www.talgiving.org/" target="_blank" rel="noopener">TALGiving, TALHospitals &amp; TALYouth ↗</a> <small>React · Vite · Next.js</small></h4>
               <ul class="pts">
                 <li>Built the admin side of TALGiving, our crowdfunding platform: a React dashboard with a role hierarchy, approval queues for fundraisers, organizations and withdrawals, and AI search. Split its APIs out of the core monolith into their own service.</li>
-                <li>Built TALHospitals telehealth APIs (consultations, prescriptions, Google Meet scheduling) and CAPTCHA-protected password recovery.</li>
+                <li>Built TALHospitals telehealth APIs (consultations, prescriptions, Google Meet scheduling) and CAPTCHA-protected password recovery, and centralized its Gemini AI model configuration so models can be upgraded in one place.</li>
                 <li>Built the TALYouth app: Google One Tap sign-in, an event registration wizard, a club directory and global search.</li>
               </ul>
             </div>
@@ -676,7 +677,7 @@
       <div class="products">
         <a class="card product" href="https://www.talradio.org/" target="_blank" rel="noopener">
           <span class="dom">talradio.org <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
-          <p>Multilingual radio and live audio clubs</p><span class="tag">LiveKit · Flutter</span>
+          <p>Multilingual radio, live audio clubs and auto-built playlists</p><span class="tag">LiveKit · Audio merge</span>
         </a>
         <a class="card product" href="https://talbloodaid.org/" target="_blank" rel="noopener">
           <span class="dom">talbloodaid.org <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
@@ -688,7 +689,7 @@
         </a>
         <a class="card product" href="https://talhospitals.org/" target="_blank" rel="noopener">
           <span class="dom">talhospitals.org <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
-          <p>Telehealth and online consultations</p><span class="tag">APIs · Google Meet</span>
+          <p>Telehealth and online consultations with Gemini AI</p><span class="tag">Gemini AI · Google Meet</span>
         </a>
         <a class="card product" href="https://www.talyouth.org/" target="_blank" rel="noopener">
           <span class="dom">talyouth.org <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
@@ -763,10 +764,10 @@
   var cv = document.getElementById('sysmap'), ctx = cv.getContext('2d'), cap = document.getElementById('sys-cap');
   var DEFAULT_CAP = cap.innerHTML;
   var APPS = [
-    { id: 'talradio', label: 'talradio', to: ['audio', 'ai', 'auth'], desc: '<b>talradio.org</b> · Live audio clubs on LiveKit with moderation, per-speaker recording and AI transcription.' },
+    { id: 'talradio', label: 'talradio', to: ['audio', 'ai', 'auth'], desc: '<b>talradio.org</b> · Live audio clubs on LiveKit with per-speaker recording and AI transcription, plus an audio-merging service that builds radio playlists automatically.' },
     { id: 'talbloodaid', label: 'talbloodaid', to: ['auth', 'ai'], desc: '<b>talbloodaid.org</b> · Blood donor network with a live coverage map, push notifications and AI gallery search.' },
     { id: 'talgiving', label: 'talgiving', to: ['pay', 'auth', 'ai'], desc: '<b>talgiving.org</b> · Crowdfunding and fundraising: Stripe, Razorpay and PayPal payments, withdrawals, AI donation ranking and a role-based admin dashboard.' },
-    { id: 'talhospitals', label: 'talhospitals', to: ['auth'], desc: '<b>talhospitals.org</b> · Telehealth APIs for consultations, prescriptions and Google Meet scheduling.' },
+    { id: 'talhospitals', label: 'talhospitals', to: ['auth', 'ai'], desc: '<b>talhospitals.org</b> · Telehealth APIs for consultations, prescriptions and Google Meet scheduling, with Gemini AI features.' },
     { id: 'talyouth', label: 'talyouth', to: ['auth'], desc: '<b>talyouth.org</b> · Youth clubs and events with Google One Tap sign-in and registrations.' }
   ];
   var SVCS = [

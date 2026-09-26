@@ -341,10 +341,10 @@
     <section>
       <h2>Live products I build</h2>
       <ul class="products">
-        <li><a href="https://www.talradio.org/" target="_blank" rel="noopener">talradio.org</a><small>Multilingual radio &amp; live audio clubs</small></li>
+        <li><a href="https://www.talradio.org/" target="_blank" rel="noopener">talradio.org</a><small>Radio, live audio clubs &amp; auto playlists</small></li>
         <li><a href="https://talbloodaid.org/" target="_blank" rel="noopener">talbloodaid.org</a><small>Blood donor network</small></li>
         <li><a href="https://www.talgiving.org/" target="_blank" rel="noopener">talgiving.org</a><small>Crowdfunding &amp; fundraising</small></li>
-        <li><a href="https://talhospitals.org/" target="_blank" rel="noopener">talhospitals.org</a><small>Telehealth &amp; consultations</small></li>
+        <li><a href="https://talhospitals.org/" target="_blank" rel="noopener">talhospitals.org</a><small>Telehealth with Gemini AI</small></li>
         <li><a href="https://www.talyouth.org/" target="_blank" rel="noopener">talyouth.org</a><small>Youth clubs &amp; events</small></li>
       </ul>
     </section>
@@ -451,6 +451,7 @@
           <ul class="pts">
             <li>Built a live audio "Clubs &amp; Spaces" product for web and mobile: hosting, stage and speaker requests, host approval, moderation, mute-all, reactions, polls, and threaded chat with replies and edits.</li>
             <li>Record each speaker separately with LiveKit Egress, then run AI transcription that detects each speaker's language and falls back gracefully when a step fails.</li>
+            <li>Built an audio-merging service that creates radio playlists automatically, with parallel downloads and retries.</li>
             <li>Added passwordless OTP login, club reminders and calendar invites, and automated daily and monthly listener and playlist reports sent by email.</li>
           </ul>
         </div>
@@ -468,7 +469,7 @@
           <h4>TALGiving, TALHospitals &amp; TALYouth <em>React · Vite · Tailwind · Next.js</em></h4>
           <ul class="pts">
             <li>Built the admin side of TALGiving, our crowdfunding platform: a React dashboard with a role hierarchy, approval queues for fundraisers, organizations and withdrawals, and AI search; split its APIs out of the core monolith into their own service.</li>
-            <li>Built TALHospitals telehealth APIs (consultations, prescriptions, Google Meet scheduling) and CAPTCHA-protected password recovery.</li>
+            <li>Built TALHospitals telehealth APIs (consultations, prescriptions, Google Meet scheduling) and CAPTCHA-protected password recovery; centralized its Gemini AI model configuration.</li>
             <li>Built the TALYouth Next.js app: Google One Tap sign-in, a registration wizard for events, a club directory and global search.</li>
           </ul>
         </div>
