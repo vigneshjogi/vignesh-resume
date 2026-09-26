@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vignesh Jogi | Full-Stack Engineer (Node.js, Next.js, MongoDB)</title>
+<meta name="description" content="Vignesh Jogi is a Full-Stack Engineer in Hyderabad with 8+ years of experience in Node.js, Next.js, React, MongoDB, LiveKit real-time audio, Stripe and Razorpay payments, and Gemini AI integrations.">
+<meta name="keywords" content="Vignesh Jogi, Full-Stack Engineer, Node.js Developer, Next.js Developer, MongoDB, React, LiveKit, Hyderabad, Backend Developer resume">
+<meta name="author" content="Vignesh Jogi">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0d6275">
+<link rel="canonical" href="https://vignesh-jogi.vercel.app/">
+<link rel="icon" type="image/png" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Vignesh Jogi">
+<meta property="og:url" content="https://vignesh-jogi.vercel.app/">
+<meta property="og:title" content="Vignesh Jogi | Full-Stack Engineer">
+<meta property="og:description" content="8+ years building Node.js, Next.js and MongoDB platforms: payments, live audio, AI features and secure auth.">
+<meta property="og:image" content="https://vignesh-jogi.vercel.app/og-image-v2.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vignesh Jogi, Full-Stack Engineer">
+<meta property="profile:first_name" content="Vignesh">
+<meta property="profile:last_name" content="Jogi">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vignesh Jogi | Full-Stack Engineer">
+<meta name="twitter:description" content="8+ years building Node.js, Next.js and MongoDB platforms: payments, live audio, AI features and secure auth.">
+<meta name="twitter:image" content="https://vignesh-jogi.vercel.app/og-image-v2.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Vignesh Jogi","url":"https://vignesh-jogi.vercel.app/","image":"https://vignesh-jogi.vercel.app/photo.jpg",
+"jobTitle":"Full-Stack Engineer","email":"mailto:jogivignesh1@gmail.com",
+"worksFor":{"@type":"Organization","name":"Solix Technologies"},
+"address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressRegion":"Telangana","addressCountry":"IN"},
+"alumniOf":{"@type":"CollegeOrUniversity","name":"Gayatri Vidya Parishad College of Engineering"},
+"knowsAbout":["Node.js","Next.js","React","MongoDB","TypeScript","LiveKit","Stripe","Razorpay","Firebase","AWS","Gemini AI"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --paper: #f7f8f6;
+    --sheet: #ffffff;
+    --ink: #17212b;
+    --muted: #56626e;
+    --rule: #dde3e6;
+    --accent: #0d6275;
+    --accent-soft: #e3f0f2;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #0f1519; --sheet: #151d22; --ink: #e5ebee; --muted: #9aa8b2;
+      --rule: #29353c; --accent: #5cc2d6; --accent-soft: #173038;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0f1519; --sheet: #151d22; --ink: #e5ebee; --muted: #9aa8b2;
+    --rule: #29353c; --accent: #5cc2d6; --accent-soft: #173038;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 400 15px/1.55 var(--body);
+    padding-inline: 16px; padding-block: 32px 48px;
+  }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+
+  .sheet {
+    max-width: 1040px; margin: 0 auto; background: var(--sheet);
+    border: 1px solid var(--rule); border-radius: 6px;
+    display: grid; grid-template-columns: 290px 1fr;
+  }
+
+  /* header */
+  header.top {
+    grid-column: 1 / -1; padding: 40px 44px 28px;
+    border-bottom: 1px solid var(--rule);
+    display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: end; justify-content: space-between;
+  }
+  h1 {
+    font: 700 clamp(34px, 6vw, 52px)/1 var(--display); letter-spacing: -0.02em; margin: 0;
+  }
+  .role { margin: 10px 0 0; font: 500 17px/1.3 var(--body); color: var(--muted); }
+  .role b { color: var(--accent); font-weight: 600; }
+  .btn.icon { padding: 8px 10px; display: inline-flex; align-items: center; }
+  .row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .copy {
+    font: 500 10.5px/1 var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--accent);
+    background: none; border: 1px solid var(--rule); border-radius: 3px; padding: 4px 6px; cursor: pointer;
+  }
+  .copy:hover { border-color: var(--accent); }
+  .products { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+  .products a { font: 500 14px/1.3 var(--body); }
+  .products small { display: block; font-size: 12px; color: var(--muted); }
+  .wins { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .win { border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; background: var(--paper); }
+  .win h3 { font: 700 15.5px/1.25 var(--display); margin: 0 0 6px; text-wrap: balance; }
+  .win p { margin: 0; font-size: 13.5px; color: var(--muted); line-height: 1.5; }
+  @media (max-width: 640px) { .wins { grid-template-columns: 1fr; } }
+  dialog#qr-dialog { padding: 0; border: 0; border-radius: 10px; background: #fff; overflow: visible; }
+  dialog#qr-dialog::backdrop { background: rgb(8 12 15 / .78); }
+  .qr-wrap { padding: 26px 26px 20px; text-align: center; color: #17212b; }
+  .qr-wrap #qr img, .qr-wrap #qr canvas { display: block; margin: 0 auto; }
+  .qr-wrap p { margin: 12px 0 0; font: 600 14px/1.3 var(--body); }
+  .qr-wrap .qr-url { margin-top: 4px; font: 400 12px/1.3 var(--mono); color: #56626e; }
+  dialog#qr-dialog .close {
+    position: absolute; top: -14px; right: -14px; width: 34px; height: 34px; border-radius: 50%;
+    border: 1px solid #dde3e6; background: #fff; color: #17212b; font-size: 20px; line-height: 1; cursor: pointer;
+  }
+  .share { position: relative; }
+  .share-menu {
+    position: absolute; right: 0; top: calc(100% + 6px); z-index: 10; min-width: 170px;
+    background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: 6px;
+    display: flex; flex-direction: column; box-shadow: 0 8px 24px rgb(0 0 0 / .18);
+  }
+  .share-menu[hidden] { display: none; }
+  .share-menu a, .share-menu button {
+    font: 500 13.5px/1.2 var(--body); color: var(--ink); text-decoration: none; text-align: left;
+    background: none; border: 0; padding: 9px 10px; border-radius: 4px; cursor: pointer;
+  }
+  .share-menu a:hover, .share-menu button:hover { background: var(--accent-soft); }
+  .id { display: flex; align-items: center; gap: 22px; min-width: 0; }
+  .avatar {
+    width: 104px; height: 104px; border-radius: 50%; object-fit: cover; object-position: 50% 35%;
+    flex: none; border: 3px solid var(--sheet); box-shadow: 0 0 0 1px var(--rule), 0 0 0 5px var(--accent-soft);
+  }
+  .avatar-btn { padding: 0; border: 0; background: none; border-radius: 50%; cursor: zoom-in; flex: none; transition: transform .2s ease; }
+  .avatar-btn:hover { transform: scale(1.04); }
+  .avatar-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  dialog#photo-dialog { padding: 0; border: 0; border-radius: 10px; background: var(--sheet); max-width: min(90vw, 440px); overflow: visible; }
+  dialog#photo-dialog::backdrop { background: rgb(8 12 15 / .78); backdrop-filter: blur(3px); }
+  dialog#photo-dialog img { display: block; width: 100%; height: auto; max-height: 85vh; object-fit: contain; border-radius: 10px; }
+  dialog#photo-dialog .close {
+    position: absolute; top: -14px; right: -14px; width: 34px; height: 34px; border-radius: 50%;
+    border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); font-size: 20px; line-height: 1; cursor: pointer;
+  }
+  @media (prefers-reduced-motion: reduce) { .avatar-btn { transition: none; } }
+  @media (max-width: 480px) { .id { gap: 14px; } .avatar { width: 76px; height: 76px; } }
+  header.top { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; }
+  .role { text-wrap: balance; }
+  @media (max-width: 900px) { header.top { grid-template-columns: 1fr; } }
+  .hright { display: flex; flex-direction: column; align-items: flex-end; gap: 14px; }
+  .hright .actions { justify-content: flex-end; }
+  .status { border: 1px solid var(--rule); border-radius: 6px; padding: 12px 16px; background: var(--paper); width: 100%; }
+  .hright { width: 372px; }
+  .id > div { min-width: 0; }
+  .hright .actions { width: 100%; flex-wrap: nowrap; }
+  .open { margin: 0 0 8px; font: 600 13px/1.3 var(--body); color: var(--ink); display: flex; align-items: center; gap: 8px; }
+  .open i { width: 8px; height: 8px; border-radius: 50%; background: #1f9d55; box-shadow: 0 0 0 3px rgb(31 157 85 / .18); flex: none; }
+  .status dl { margin: 0; display: grid; gap: 4px; }
+  .status dl div { display: grid; grid-template-columns: 84px 1fr; gap: 8px; }
+  .status dt { font: 400 10.5px/1.6 var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+  .status dd { margin: 0; font-size: 13px; }
+  @media (max-width: 900px) { .hright { align-items: stretch; width: 100%; max-width: 440px; } .hright .actions { justify-content: flex-start; flex-wrap: wrap; } .status { min-width: 0; } }
+  .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn {
+    font: 500 13px/1 var(--body); padding: 10px 14px; border-radius: 4px; cursor: pointer;
+    border: 1px solid var(--accent); background: var(--accent); color: var(--sheet); text-decoration: none;
+  }
+  .btn.ghost { background: transparent; color: var(--accent); }
+
+  /* sidebar */
+  aside { padding: 28px 28px 36px 44px; border-right: 1px solid var(--rule); display: flex; flex-direction: column; gap: 28px; }
+  main { padding: 28px 44px 36px 36px; display: flex; flex-direction: column; gap: 30px; min-width: 0; }
+
+  h2 {
+    font: 500 11.5px/1 var(--mono); text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--accent); margin: 0 0 14px;
+  }
+  .contact { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 14px; }
+  .contact span { display: block; font: 400 11px/1.2 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+  .contact .val { word-break: break-word; }
+
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 12px; }
+  .stat b { display: block; font: 700 26px/1 var(--display); font-variant-numeric: tabular-nums; }
+  .stat small { font-size: 12px; color: var(--muted); line-height: 1.3; display: block; margin-top: 4px; }
+
+  .skillgroup + .skillgroup { margin-top: 14px; }
+  .skillgroup h3 { font: 600 13px/1.3 var(--body); margin: 0 0 6px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .tags li {
+    list-style: none; font: 400 12px/1 var(--mono); padding: 5px 7px; border-radius: 3px;
+    background: var(--accent-soft); color: var(--ink);
+  }
+  .tags { margin: 0; padding: 0; }
+
+  .edu h3 { font: 600 14px/1.3 var(--body); margin: 0; }
+  .edu p { margin: 2px 0 0; font-size: 13px; color: var(--muted); }
+  .plain { margin: 0; font-size: 14px; }
+
+  /* main */
+  .summary { margin: 0; font-size: 15.5px; max-width: 68ch; }
+
+  .job + .job { margin-top: 26px; padding-top: 26px; border-top: 1px dashed var(--rule); }
+  .jobhead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; }
+  .jobhead h3 { font: 700 20px/1.2 var(--display); margin: 0; text-wrap: balance; }
+  .when { font: 400 12.5px/1.3 var(--mono); color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .jobmeta { margin: 3px 0 0; color: var(--muted); font-size: 14px; }
+  .jobintro { margin: 10px 0 0; max-width: 72ch; }
+
+  .project { margin-top: 18px; }
+  .project h4 {
+    font: 600 15px/1.3 var(--body); margin: 0; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline;
+  }
+  .project h4 em { font: 400 12px/1.3 var(--mono); font-style: normal; color: var(--muted); }
+  ul.pts { margin: 6px 0 0; padding-left: 18px; }
+  ul.pts li { margin: 3px 0; padding-left: 2px; max-width: 76ch; }
+  ul.pts li::marker { color: var(--accent); }
+
+  footer { max-width: 1040px; margin: 14px auto 0; font: 400 12px/1.4 var(--mono); color: var(--muted); text-align: right; }
+
+  @media (max-width: 820px) {
+    .sheet { grid-template-columns: 1fr; }
+    header.top { padding: 28px 20px 22px; }
+    aside { border-right: 0; border-bottom: 1px solid var(--rule); padding: 22px 20px; }
+    main { padding: 22px 20px 28px; }
+    .stats { grid-template-columns: repeat(4, 1fr); }
+  }
+  @media (max-width: 480px) {
+    body { padding-block: 16px 32px; }
+    .stats { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media print {
+    @page { size: A4; margin: 9mm 10mm; }
+    :root, :root:not([data-theme="light"]), :root[data-theme] { --paper:#fff; --sheet:#fff; --ink:#111; --muted:#4a5560; --rule:#d6dcdf; --accent:#0d6275; --accent-soft:#eaf3f4; color-scheme: light; }
+    body { padding: 0; font-size: 10.4pt; line-height: 1.42; }
+    .sheet { border: 0; grid-template-columns: 58mm 1fr; }
+    header.top { padding: 0 0 5mm; }
+    aside { padding: 5mm 5mm 0 0; gap: 5mm; }
+    main { padding: 5mm 0 0 6mm; gap: 5mm; }
+    .actions, footer, dialog, .copy, .hright { display: none; }
+    .wins { gap: 3mm; } .win { padding: 3mm 4mm; break-inside: avoid; background: none; }
+    .win p { font-size: 9.2pt; } .win h3 { font-size: 10.5pt; }
+    .products { gap: 1.5mm; } .products a { font-size: 9.5pt; } .products small { font-size: 8pt; }
+    h1 { font-size: 28pt; }
+    .avatar { width: 24mm; height: 24mm; box-shadow: 0 0 0 1px var(--rule); border: 0; }
+    .id { gap: 6mm; }
+    .job + .job { margin-top: 4mm; padding-top: 4mm; }
+    .project { margin-top: 3mm; break-inside: avoid; }
+    .jobhead, .project h4 { break-after: avoid; }
+    a { color: inherit; text-decoration: none; }
+    .tags li { padding: 2px 4px; font-size: 7.4pt; }
+    body { font-size: 8.7pt; line-height: 1.33; }
+    .sheet { grid-template-columns: 52mm 1fr; }
+    h1 { font-size: 24pt; } .role { font-size: 10.5pt; margin-top: 4px; }
+    .avatar { width: 20mm; height: 20mm; }
+    h2 { font-size: 7.6pt; margin-bottom: 2.2mm; }
+    aside { gap: 4mm; padding-right: 4mm; } main { gap: 4mm; padding-left: 5mm; }
+    .summary { font-size: 8.9pt; max-width: none; }
+    .stats { grid-template-columns: 1fr 1fr; gap: 2.5mm 2mm; }
+    .stat b { font-size: 14pt; } .stat small { font-size: 7.4pt; margin-top: 1px; }
+    .contact { font-size: 8.6pt; gap: 1.6mm; }
+    .skillgroup + .skillgroup { margin-top: 2.4mm; } .skillgroup h3 { font-size: 8.4pt; margin-bottom: 1.2mm; }
+    .tags { gap: 3px; }
+    .edu h3, .plain { font-size: 8.6pt; } .edu p { font-size: 8pt; }
+    .win p { font-size: 8.2pt; line-height: 1.35; } .win h3 { font-size: 9.4pt; margin-bottom: 1mm; }
+    .jobhead h3 { font-size: 12pt; } .jobmeta { font-size: 8.6pt; } .when { font-size: 8pt; }
+    .jobintro { margin-top: 1.5mm; max-width: none; }
+    .project { margin-top: 2.6mm; break-inside: auto; }
+    .project h4 { font-size: 9.4pt; } .project h4 em { font-size: 7.6pt; }
+    ul.pts { margin-top: 1mm; } ul.pts li { margin: 0.3mm 0; max-width: none; }
+    aside { border-bottom: 0; }
+    ul.pts li { break-inside: avoid; }
+    .job + .job { margin-top: 3.5mm; padding-top: 3.5mm; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="top">
+    <div class="id">
+      <button class="avatar-btn" id="photo-open" type="button" aria-label="View photo larger"><img class="avatar" src="photo.jpg" width="104" height="104" alt="Vignesh Jogi"></button>
+      <div>
+      <h1>Vignesh Jogi</h1>
+      <p class="role"><b>Full-Stack Engineer</b> · Node.js · Next.js · MongoDB</p>
+      </div>
+    </div>
+    <div class="hright">
+    <div class="status">
+      <p class="open"><i aria-hidden="true"></i>Open to Senior Full-Stack &amp; Backend roles</p>
+      <dl>
+        <div><dt>Currently</dt><dd>Full-Stack Developer, Solix Technologies</dd></div>
+        <div><dt>Experience</dt><dd>8+ years · since 2018</dd></div>
+        <div><dt>Focus</dt><dd>Real-time, payments &amp; AI</dd></div>
+      </dl>
+    </div>
+    <div class="actions">
+      <a class="btn" href="/Vignesh-Jogi-Resume.pdf" download="Vignesh-Jogi-Resume.pdf">Download PDF</a>
+      <a class="btn ghost" href="mailto:jogivignesh1@gmail.com">Email me</a>
+      <div class="share">
+        <button class="btn ghost" id="share-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="share-menu">Share</button>
+        <div class="share-menu" id="share-menu" hidden>
+          <button type="button" id="copy-link">Copy link</button>
+          <a id="sh-li" target="_blank" rel="noopener">LinkedIn</a>
+          <a id="sh-wa" target="_blank" rel="noopener">WhatsApp</a>
+          <a id="sh-x" target="_blank" rel="noopener">X (Twitter)</a>
+          <a id="sh-mail">Email</a>
+          <button type="button" id="show-qr">QR code</button>
+        </div>
+      </div>
+      <button class="btn ghost icon" id="theme-btn" type="button" aria-label="Switch to dark theme" title="Switch theme">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+    </div>
+  </header>
+
+  <aside>
+    <section>
+      <h2>Contact</h2>
+      <ul class="contact">
+        <li><span>Email</span><div class="row"><a class="val" href="mailto:jogivignesh1@gmail.com">jogivignesh1@gmail.com</a><button class="copy" type="button" data-copy="jogivignesh1@gmail.com" aria-label="Copy email">Copy</button></div></li>
+        <li><span>Phone</span><div class="row"><a class="val" href="tel:+919182096307">+91 91820 96307</a><button class="copy" type="button" data-copy="+91 91820 96307" aria-label="Copy phone number">Copy</button></div></li>
+        <li><span>LinkedIn</span><div class="row"><a class="val" href="https://www.linkedin.com/in/vigneshjogi/">linkedin.com/in/vigneshjogi</a></div></li>
+        <li><span>GitHub</span><div class="row"><a class="val" href="https://github.com/vigneshjogi">github.com/vigneshjogi</a></div></li>
+        <li><span>Location</span><div class="val">Hyderabad, India · open to hybrid &amp; remote</div></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>At a glance</h2>
+      <div class="stats">
+        <div class="stat"><b>8+</b><small>years building production software</small></div>
+        <div class="stat"><b>3</b><small>payment gateways integrated end to end</small></div>
+        <div class="stat"><b>15</b><small>connected apps on one shared backend</small></div>
+        <div class="stat"><b>700+</b><small>REST routes across 9 deployed services</small></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Live products I build</h2>
+      <ul class="products">
+        <li><a href="https://www.talradio.org/" target="_blank" rel="noopener">talradio.org</a><small>Multilingual radio &amp; live audio clubs</small></li>
+        <li><a href="https://talbloodaid.org/" target="_blank" rel="noopener">talbloodaid.org</a><small>Blood donor network</small></li>
+        <li><a href="https://www.talgiving.org/" target="_blank" rel="noopener">talgiving.org</a><small>Crowdfunding &amp; fundraising</small></li>
+        <li><a href="https://talhospitals.org/" target="_blank" rel="noopener">talhospitals.org</a><small>Telehealth &amp; consultations</small></li>
+        <li><a href="https://www.talyouth.org/" target="_blank" rel="noopener">talyouth.org</a><small>Youth clubs &amp; events</small></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skillgroup">
+        <h3>Backend</h3>
+        <ul class="tags"><li>Node.js</li><li>Express</li><li>TypeScript</li><li>REST APIs</li><li>Firebase Functions</li><li>Cloud Tasks</li><li>Kafka</li><li>Swagger</li></ul>
+      </div>
+      <div class="skillgroup">
+        <h3>Frontend &amp; mobile</h3>
+        <ul class="tags"><li>React</li><li>Next.js</li><li>Redux Toolkit</li><li>Tailwind</li><li>Material UI</li><li>Vite</li><li>Flutter</li></ul>
+      </div>
+      <div class="skillgroup">
+        <h3>Data</h3>
+        <ul class="tags"><li>MongoDB</li><li>Mongoose</li><li>Aggregation pipelines</li><li>Firestore</li><li>MySQL</li><li>DynamoDB</li></ul>
+      </div>
+      <div class="skillgroup">
+        <h3>Real-time, payments &amp; AI</h3>
+        <ul class="tags"><li>LiveKit</li><li>WebRTC rooms</li><li>FCM push</li><li>Stripe</li><li>Razorpay</li><li>PayPal</li><li>Gemini</li><li>Embeddings</li></ul>
+      </div>
+      <div class="skillgroup">
+        <h3>AI-assisted development</h3>
+        <ul class="tags"><li>Claude Code</li><li>Prompt engineering</li><li>AI code review</li></ul>
+      </div>
+      <div class="skillgroup">
+        <h3>Security, cloud &amp; delivery</h3>
+        <ul class="tags"><li>JWT RS256</li><li>OAuth social login</li><li>OTP auth</li><li>GCP</li><li>Ubuntu servers</li><li>AWS</li><li>GitHub Actions</li><li>Jenkins</li><li>Jest</li><li>Vitest</li><li>Splunk</li><li>Agile / Jira</li></ul>
+      </div>
+    </section>
+
+    <section class="edu">
+      <h2>Education</h2>
+      <h3>B.Tech</h3>
+      <p>Gayatri Vidya Parishad College of Engineering, Visakhapatnam · 2017</p>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <p class="plain">English, Telugu</p>
+    </section>
+
+    <section>
+      <h2>Awards</h2>
+      <p class="plain">On the Spot Award, Star Team Award, Service &amp; Commitment Award</p>
+    </section>
+  </aside>
+
+  <main>
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">Full-stack engineer with 8+ years of experience, strongest on the backend with Node.js and MongoDB. At Touch-A-Life I build and run a family of connected nonprofit platforms: TALGiving crowdfunding with Stripe, Razorpay and PayPal payments, LiveKit live-audio rooms, telehealth, and blood donation. I've shipped AI features with Gemini, rebuilt authentication for security (RS256, refresh-token rotation, session revocation), and I ship end to end, from API design and data modelling to Next.js and Flutter clients and CI/CD. The platform runs mainly on GCP, plus our own Ubuntu servers. I use Claude Code daily as an AI pair programmer for building, debugging, tests and reviews.</p>
+    </section>
+
+    <section>
+      <h2>Key achievements</h2>
+      <div class="wins">
+        <div class="win">
+          <h3>Rebuilt authentication for 15 apps</h3>
+          <p>After a penetration test, moved JWT signing from HS256 to RS256 with no downtime by accepting both during a migration window. Added refresh-token rotation, instant session revocation and device tracking for every TAL app. Cross-domain single sign-on is the next step.</p>
+        </div>
+        <div class="win">
+          <h3>Built live audio rooms from scratch</h3>
+          <p>Took TALRadio Clubs from idea to production on LiveKit for web and Flutter, with moderation, polls, chat, per-speaker recording and AI transcription that detects each speaker's language.</p>
+        </div>
+        <div class="win">
+          <h3>Made pages load faster on slow networks</h3>
+          <p>Removed about 135 KB of JavaScript from every TALBloodAid page, loaded maps and Firebase only when needed, and fixed server-rendering bugs that were hurting search rankings.</p>
+        </div>
+        <div class="win">
+          <h3>Moved money safely across 3 gateways</h3>
+          <p>Built the TALGiving crowdfunding payment flows on Stripe, Razorpay and PayPal, with verified webhooks, withdrawals, payouts, balance calculation and reconciliation reports.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <article class="job">
+        <div class="jobhead">
+          <h3>Solix Technologies · Touch-A-Life Foundation</h3>
+          <span class="when">11/2022 – Present</span>
+        </div>
+        <p class="jobmeta">Full-Stack Developer · Hyderabad</p>
+        <p class="jobintro">Lead contributor to the Touch-A-Life platform, a group of about 15 nonprofit apps that share one Node.js + MongoDB backend on GCP and our own Ubuntu servers. I own features end to end across backend APIs, Next.js web apps, React admin dashboards and a Flutter mobile app, and manage sprint-based releases to production.</p>
+
+        <div class="project">
+          <h4>Touch-A-Life core platform <em>Node.js · Express 5 · MongoDB · Firebase Functions · Stripe</em></h4>
+          <ul class="pts">
+            <li>Build and maintain a service-oriented API: 700+ routes over 126 data models, split into 9 separately deployed services (auth, users, orgs, payments, donations, admin, media, health, app) plus a Cloud Tasks worker.</li>
+            <li>Rebuilt authentication after a penetration test: moved JWTs from HS256 to RS256 with no downtime, added refresh-token rotation with a grace window, immediate session revocation and device tracking for all TAL apps. Cross-domain SSO is in progress.</li>
+            <li>Built the TALGiving crowdfunding payment flows on Stripe, Razorpay and PayPal: verified webhooks, withdrawals and payouts, available-balance calculation, reconciliation reports and a two-step organization approval.</li>
+            <li>Added AI-assisted donation recommendations that combine semantic ranking with a relevance weight score, and a Gemini translation provider.</li>
+            <li>Standardized error codes across every API, added remote log-level control through Firestore, and moved all services to the asia-south1 region to cut latency for Indian users.</li>
+            <li>Deploy mainly on Google Cloud (Firebase Functions, Cloud Tasks, Storage), and run additional services on our own Ubuntu servers.</li>
+            <li>Built modules for clubs, events, pitch fest (judges and mentors), NGO volunteers and projects, WhatsApp, SMS and email notifications, and MongoDB text-index search.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h4>TALRadio: live audio clubs <em>LiveKit · Next.js · TypeScript · Flutter</em></h4>
+          <ul class="pts">
+            <li>Built a live audio "Clubs &amp; Spaces" product for web and mobile: hosting, stage and speaker requests, host approval, moderation, mute-all, reactions, polls, and threaded chat with replies and edits.</li>
+            <li>Record each speaker separately with LiveKit Egress, then run AI transcription that detects each speaker's language and falls back gracefully when a step fails.</li>
+            <li>Added passwordless OTP login, club reminders and calendar invites, and automated daily and monthly listener and playlist reports sent by email.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h4>TALBloodAid: blood donation network <em>Next.js · MUI · Redux · FCM · Razorpay</em></h4>
+          <ul class="pts">
+            <li>Improved performance and SEO on slow mobile networks: removed about 135 KB of JavaScript from every page, lazy-loaded maps and Firebase, and fixed SSR blank pages, soft 404s and hydration errors.</li>
+            <li>Built a live donor-coverage map, push notifications, and resumable direct uploads for large videos with progress tracking.</li>
+            <li>Added AI gallery search with embeddings whose model can be switched through configuration, and structured request logging with trace context.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h4>TALGiving, TALHospitals &amp; TALYouth <em>React · Vite · Tailwind · Next.js</em></h4>
+          <ul class="pts">
+            <li>Built the admin side of TALGiving, our crowdfunding platform: a React dashboard with a role hierarchy, approval queues for fundraisers, organizations and withdrawals, and AI search; split its APIs out of the core monolith into their own service.</li>
+            <li>Built TALHospitals telehealth APIs (consultations, prescriptions, Google Meet scheduling) and CAPTCHA-protected password recovery.</li>
+            <li>Built the TALYouth Next.js app: Google One Tap sign-in, a registration wizard for events, a club directory and global search.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="jobhead">
+          <h3>Sonata Software</h3>
+          <span class="when">06/2021 – 10/2022</span>
+        </div>
+        <p class="jobmeta">Developer · Hyderabad</p>
+        <div class="project">
+          <h4>Cost Calculator <em>02/2022 – 10/2022 · Node.js · React · Kafka</em></h4>
+          <ul class="pts">
+            <li>Built the Node.js API layer for a web portal that estimates product cost, fetching product information and running the pricing calculations.</li>
+            <li>Streamed product and pricing data between services with Kafka producers and consumers.</li>
+            <li>Built reusable React functional micro-components that other teams used across the portal.</li>
+            <li>Worked in Agile sprints with Jira, taking features from requirement to release with QA and product teams.</li>
+          </ul>
+        </div>
+        <div class="project">
+          <h4>ArtWorks <em>06/2021 – 03/2022 · TypeScript · Node.js · Jest · Kafka</em></h4>
+          <ul class="pts">
+            <li>Reviewed the existing legacy services and rewrote them as TypeScript Node.js services.</li>
+            <li>Helped plan and carry out the team's migration from the old stack to Node.js, keeping the old and new services running side by side until cutover.</li>
+            <li>Wrote Jest unit tests for the new services and documented the APIs with Swagger.</li>
+            <li>Built data-processing jobs with kafka-node.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="jobhead">
+          <h3>Tata Consultancy Services</h3>
+          <span class="when">03/2018 – 06/2021</span>
+        </div>
+        <p class="jobmeta">Developer Associate · Thane, Maharashtra</p>
+        <div class="project">
+          <h4>Global Service Delivery Platform <em>Node.js · AWS · MySQL · Splunk · React</em></h4>
+          <ul class="pts">
+            <li>Built Node.js REST APIs (Express, aws-sdk, mysql) for a connected-vehicle mobile app used by customers across global regions.</li>
+            <li>Built and ran serverless services on AWS: Lambda, API Gateway, S3, DynamoDB, SNS, Kinesis, EC2, and CloudWatch Logs and Insights.</li>
+            <li>Wrote and tuned complex MySQL queries for vehicle and user data, and optimized existing code during integration.</li>
+            <li>Sent AWS logs and metrics to Splunk and built dashboards that helped the team find and fix production issues faster.</li>
+            <li>Ran integration testing before each release and handled code integration across teams.</li>
+            <li>Owned production support: triaged and routed incidents in ServiceNow, fixed bugs and shipped enhancements, and worked directly with the customer to resolve application issues.</li>
+            <li>Supported and fixed the React.js web pages that went with the app.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+</div>
+<dialog id="photo-dialog" aria-label="Photo of Vignesh Jogi">
+  <img src="photo-large.jpg?v=2" alt="Vignesh Jogi" width="1000" height="1250" loading="lazy">
+  <button class="close" id="photo-close" type="button" aria-label="Close">×</button>
+</dialog>
+<dialog id="qr-dialog" aria-label="QR code for this resume">
+  <div class="qr-wrap">
+    <div id="qr"></div>
+    <p>Scan to open my resume</p>
+    <p class="qr-url">vignesh-jogi.vercel.app</p>
+  </div>
+  <button class="close" id="qr-close" type="button" aria-label="Close">×</button>
+</dialog>
+<footer>Updated September 2026</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  var URL_ = 'https://vignesh-jogi.vercel.app/', TXT = 'Vignesh Jogi, Full-Stack Engineer (Node.js, Next.js, MongoDB)';
+  var e = encodeURIComponent, menu = document.getElementById('share-menu'), sb = document.getElementById('share-btn');
+  document.getElementById('sh-li').href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + e(URL_);
+  document.getElementById('sh-wa').href = 'https://wa.me/?text=' + e(TXT + ' ' + URL_);
+  document.getElementById('sh-x').href = 'https://twitter.com/intent/tweet?url=' + e(URL_) + '&text=' + e(TXT);
+  document.getElementById('sh-mail').href = 'mailto:?subject=' + e('Resume: Vignesh Jogi') + '&body=' + e(TXT + '\n' + URL_);
+  function setMenu(open) { menu.hidden = !open; sb.setAttribute('aria-expanded', open); }
+  sb.addEventListener('click', function (ev) {
+    ev.stopPropagation();
+    if (navigator.share && matchMedia('(pointer: coarse)').matches) {
+      navigator.share({ title: 'Vignesh Jogi', text: TXT, url: URL_ }).catch(function () {});
+    } else setMenu(menu.hidden);
+  });
+  document.addEventListener('click', function (ev) { if (!menu.contains(ev.target)) setMenu(false); });
+  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') setMenu(false); });
+  document.getElementById('copy-link').addEventListener('click', function () {
+    var b = this;
+    navigator.clipboard.writeText(URL_).then(function () { b.textContent = 'Link copied'; setTimeout(function () { b.textContent = 'Copy link'; }, 1600); })
+      .catch(function () { prompt('Copy this link:', URL_); });
+  });
+  // copy buttons
+  document.querySelectorAll('.copy').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var t = b.getAttribute('data-copy');
+      navigator.clipboard.writeText(t).then(function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1500); })
+        .catch(function () { prompt('Copy:', t); });
+    });
+  });
+  // QR code
+  var qd = document.getElementById('qr-dialog'), qrMade = false;
+  document.getElementById('show-qr').addEventListener('click', function () {
+    setMenu(false);
+    if (!qrMade && window.QRCode) { new QRCode(document.getElementById('qr'), { text: URL_, width: 220, height: 220, colorDark: '#17212b', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M }); qrMade = true; }
+    qd.showModal();
+  });
+  document.getElementById('qr-close').addEventListener('click', function () { qd.close(); });
+  qd.addEventListener('click', function (e) { if (e.target === qd) qd.close(); });
+  // theme toggle
+  var root = document.documentElement, tb = document.getElementById('theme-btn');
+  var sun = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  var moon = tb.innerHTML;
+  function isDark() { var t = root.getAttribute('data-theme'); return t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches; }
+  function paint() { var d = isDark(); tb.innerHTML = d ? sun : moon; tb.setAttribute('aria-label', d ? 'Switch to light theme' : 'Switch to dark theme'); }
+  try { var saved = localStorage.getItem('theme'); if (saved) root.setAttribute('data-theme', saved); } catch (e) {}
+  paint();
+  tb.addEventListener('click', function () {
+    var next = isDark() ? 'light' : 'dark'; root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    paint();
+  });
+  var dlg = document.getElementById('photo-dialog');
+  document.getElementById('photo-open').addEventListener('click', function () { dlg.showModal(); });
+  document.getElementById('photo-close').addEventListener('click', function () { dlg.close(); });
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+
+</script>
+</body>
+</html>

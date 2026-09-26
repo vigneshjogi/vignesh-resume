@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vignesh-jogi.vercel.app/sitemap.xml
